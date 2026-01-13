@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LC Book - Thư viện sách</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="header d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <span class="lc">LC</span> <span class="book">BOOK</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Bạn muốn tìm sách gì?" />
+      </div>
+      <a href="dangnhap.html" class="login-btn btn btn-primary">🔓 Đăng Nhập</a>
+    </div>
+
+    <nav class="nav nav-pills justify-content-center">
+      <a class="nav-link" href="index.html">Trang Chủ</a>
+      <a class="nav-link" href="noibat.html">Sách Nổi Bật</a>
+      <a class="nav-link" href="giamgia.html">Sách Đang Được Giảm Giá</a>
+      <a class="nav-link" href="lichsu.html">Lịch Sử Thuê Sách</a>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-books"></div>
+        <div class="hero-text">
+          <h1>Khám phá kho sách mới mỗi ngày</h1>
+          <p>
+            Tiếp cận tri thức mỗi ngày với dịch vụ thuê sách online. Giao sách
+            tận nơi cho bạn. Đến với LC Book mà bạn không lo lo về giá thuê!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="section-title">Sách nổi bật</h2>
+      <div class="book-grid">
+        <a href="chitiet.html?product=sp1" class="book-card">
+          <div class="book-cover"><img src="sp1.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Đất rừng phương Nam</div>
+          <div class="book-price">$ 15k/ngày</div>
+        </a>
+
+        <a href="chitiet.html?product=sp2" class="book-card">
+          <div class="book-cover"><img src="sp2.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Đắc Nhân Tâm</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 20k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp3" class="book-card">
+          <div class="book-cover"><img src="sp3.png" /></div>
+          <div class="book-rating">★★★☆☆</div>
+          <div class="book-title">Bài giảng cuối cùng</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 5k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp4" class="book-card">
+          <div class="book-cover"><img src="sp4.png" /></div>
+          <div class="book-rating">★★★☆☆</div>
+          <div class="book-title">Cho tôi xin một vé đi tuổi thơ</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 12k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp5" class="book-card">
+          <div class="book-cover"><img src="sp5.png" /></div>
+          <div class="book-rating">★★☆☆☆</div>
+          <div class="book-title">Chiến binh cầu vồng</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 20k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp6" class="book-card">
+          <div class="book-cover"><img src="sp6.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Nhà giả kim</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 12k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp7" class="book-card">
+          <div class="book-cover"><img src="sp7.png" /></div>
+          <div class="book-rating">★★★☆☆</div>
+          <div class="book-title">Tuổi trẻ đáng giá bao nhiêu</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 15k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp8" class="book-card">
+          <div class="book-cover"><img src="sp8.png" /></div>
+          <div class="book-rating">★★☆☆☆</div>
+          <div class="book-title">Thành phố và những bức tường bất định</div>
+          <div class="book-price">
+            <span class="original-price"></span>$ 9k/ngày
+          </div>
+        </a>
+      </div>
+
+      <h2 class="section-title">⚡ Sách đang được giảm giá ⚡</h2>
+      <div class="book-grid">
+        <a href="chitiet.html?product=sp9" class="book-card">
+          <div class="book-cover"><img src="sp9.png" /></div>
+          <div class="book-rating">★★☆☆☆</div>
+          <div class="book-title">Không đọc sách này chụp xấu đừng buồn</div>
+          <div class="book-price">
+            <span class="original-price">$ 16k/</span>$ 10k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp10" class="book-card">
+          <div class="book-cover"><img src="sp10.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Chúa tể & Chiếc nhẫn</div>
+          <div class="book-price">
+            <span class="original-price">$ 12k/</span>$ 6k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp11" class="book-card">
+          <div class="book-cover"><img src="sp11.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Harry Potter</div>
+          <div class="book-price">
+            <span class="original-price">$ 15k/</span>$ 5k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp12" class="book-card">
+          <div class="book-cover"><img src="sp12.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Hạt giống tâm hồn</div>
+          <div class="book-price">
+            <span class="original-price">$ 8k/</span>$ 4k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp13" class="book-card">
+          <div class="book-cover"><img src="sp13.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Chú nhân cuộc đời</div>
+          <div class="book-price">
+            <span class="original-price">$ 12k/</span>$ 6k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp14" class="book-card">
+          <div class="book-cover"><img src="sp14.png" /></div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-title">Tiếng chim hót</div>
+          <div class="book-price">
+            <span class="original-price">$ 14k/</span>$ 7k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp15" class="book-card">
+          <div class="book-cover"><img src="sp15.png" /></div>
+          <div class="book-rating">★★★☆☆</div>
+          <div class="book-title">Cuộn theo chiều gió</div>
+          <div class="book-price">
+            <span class="original-price">$ 20k/</span>$ 10k/ngày
+          </div>
+        </a>
+
+        <a href="chitiet.html?product=sp16" class="book-card">
+          <div class="book-cover"><img src="sp16.png" /></div>
+          <div class="book-rating">★★☆☆☆</div>
+          <div class="book-title">Thần lùn</div>
+          <div class="book-price">
+            <span class="original-price">$ 16k/</span>$ 8k/ngày
+          </div>
+        </a>
+      </div>
+
+      <div class="top-books">
+        <h3 class="top-books-title">
+          ⚡ Top sách được thuê nhiều nhất tháng 11 ⚡
+        </h3>
+
+        <div class="book-grid">
+          <a href="chitiet.html?product=sp17" class="book-card">
+            <div class="book-cover"><img src="sp17.png" /></div>
+            <div class="book-rating">★★★★★</div>
+            <div class="book-title">Thung lũng đông vàng</div>
+            <div class="book-price">$ 13k/ngày</div>
+          </a>
+
+          <a href="chitiet.html?product=sp18" class="book-card">
+            <div class="book-cover"><img src="sp18.png" /></div>
+            <div class="book-rating">★★★★★</div>
+            <div class="book-title">Chú khủng long</div>
+            <div class="book-price">$ 10k/ngày</div>
+          </a>
+
+          <a href="chitiet.html?product=sp19" class="book-card">
+            <div class="book-cover"><img src="sp19.png" /></div>
+            <div class="book-rating">★★★★☆</div>
+            <div class="book-title">Nàng dâu Halloween</div>
+            <div class="book-price">$ 11k/ngày</div>
+          </a>
+
+          <a href="chitiet.html?product=sp20" class="book-card">
+            <div class="book-cover"><img src="sp20.png" /></div>
+            <div class="book-rating">★★★★☆</div>
+            <div class="book-title">Pokémon đặc biệt</div>
+            <div class="book-price">$ 12k/ngày</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="review-section">
+        <h3 class="review-title">Một số lời đánh giá nổi bật</h3>
+
+        <div class="review-cards">
+          <div class="review-card">
+            <h4>Văn An</h4>
+            <p>
+              Tôi rất thích dịch vụ thuê sách online tại LC Book. Sách mới 95%
+              có đủ các thể loại. Thay vì bỏ số tiền lớn ra mua sách, tôi chỉ
+              mất 1 phần rất nhỏ để có thể đọc những cuốn sách mình yêu thích.
+              Dịch vụ giao nhận rất nhanh và tận tình. Tôi khuyên bạn bè và
+              người thân của tôi nên trải nghiệm dịch vụ này.
+            </p>
+          </div>
+
+          <div class="review-card">
+            <h4>Ngọc Viễn</h4>
+            <p>
+              Điều tôi đánh giá cao là sự đa dạng trong kho sách và sự tiện lợi,
+              giúp tôi tiếp cận sách dễ dàng. Dịch vụ tốt, sách mới, có thể thuê
+              nhiều sách cùng lúc. Tôi tin rằng dịch vụ sẽ phổ biến hơn nữa. Cảm
+              ơn LC Book đã mang đến trải nghiệm tuyệt vời.
+            </p>
+          </div>
+
+          <div class="review-card">
+            <h4>Thanh Thư</h4>
+            <p>
+              Chính sách thuê sách rõ ràng và giá cả phải chăng. Dịch vụ tư vấn
+              nhiệt tình, tôi đã chọn được cuốn sách ưng ý. Rất mong muốn được
+              trải nghiệm thêm các dịch vụ khác của LC Book. Tôi đã giới thiệu
+              bạn bè sử dụng dịch vụ này và họ đều hài lòng. Rất mong muốn LC
+              Book mở rộng thêm.
+            </p>
+          </div>
+
+          <div class="review-card">
+            <h4>Văn An</h4>
+            <p>
+              Một điểm nhỏ cần cải thiện là thời gian giao hàng. Nếu nhanh hơn
+              nữa thì tuyệt vời. Sách rất sạch sẽ và gói cẩn thận. Tôi rất hài
+              lòng về chất lượng sách và dịch vụ. Tôi hy vọng LC Book sẽ có thêm
+              nhiều đầu sách hơn nữa để có nhiều lựa chọn. Tôi sẽ quay lại sử
+              dụng dịch vụ này.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-section">
+        <div class="quote-content-wrapper">
+          <div class="quote-text-wrapper">
+            <p class="quote-text">
+              "Mỗi cuốn sách là một hành trình mới. Với dịch vụ thuê sách
+              online, bạn sẽ không bao giờ cảm thấy thiếu sách để đọc. Chỉ cần
+              bấm chọn vài click, đừng để những cuốn sách yêu thích lọt khỏi tầm
+              tay bạn. Cùng chúng tôi khám phá kho sách online - hãy bắt đầu
+              trải nghiệm ngay hôm nay!"
+            </p>
+          </div>
+          <div class="quote-image-wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Liên kết</h3>
+          <ul>
+            <li><a href="#">Liên hệ chúng tôi</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="#">Trợ giúp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Khác</h3>
+          <ul>
+            <li><a href="#">Chính sách sử dụng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Đăng Kí</h3>
+          <ul>
+            <li><a href="#">Thuê sách</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+  <h3>Mạng xã hội</h3>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/only.wind06"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@only.wind06"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  </div>
+</div>
+
+</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Địa chỉ: số 7, ngõ 161, Nguyễn Du, thành phố Vinh</p>
+        <p>Điện thoại: 0398880794</p>
+        <p>Email: tuanphaiphai2006@gmail.com</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Sản Phẩm</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <span class="lc">LC</span> <span class="book">BOOK</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm sách" />
+      </div>
+      <a href="dangnhap.html" class="login-btn btn btn-primary">🔓 Đăng Nhập</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav nav-pills justify-content-center">
+      <a class="nav-link" href="index.html">Trang Chủ</a>
+      <a class="nav-link" href="noibat.html">Sách Nổi Bật</a>
+      <a class="nav-link" href="giamgia.html">Sách Đang Được Giảm Giá</a>
+      <a class="nav-link" href="lichsu.html">Lịch Sử Thuê Sách</a>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <div class="container">
+      <div class="product-detail">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="product-image">
+              <img id="product-image" src="" alt="Sản phẩm" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-info">
+              <h2 id="product-title"></h2>
+              <p id="product-price"></p>
+              <p id="product-rating"></p>
+              <p id="product-description"></p>
+              <button class="btn btn-warning" onclick="goToCheckout()">Đặt thuê sách</button>
+
+    <script>
+       function goToCheckout() {
+      // Chuyển hướng sang trang thanh toán kèm mã sản phẩm hiện tại trên URL
+      const urlParams = new URLSearchParams(window.location.search);
+     const product = urlParams.get("product");
+      if (product) {
+       window.location.href = `thanhtoan.html?product=${product}`;
+       }
+     }  </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Liên kết</h3>
+          <ul>
+            <li><a href="#">Liên hệ chúng tôi</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="#">Trợ giúp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Khác</h3>
+          <ul>
+            <li><a href="#">Chính sách sử dụng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Đăng Kí</h3>
+          <ul>
+            <li><a href="#">Thuê sách</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+        <h3>Mạng xã hội</h3>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/only.wind06"
+         target="_blank"
+        rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook-f"></i>
+         </a>
+
+        <a href="https://www.tiktok.com/@only.wind06"
+        target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Địa chỉ: số 7, ngõ 161, Nguyễn Du, thành phố Vinh</p>
+        <p>Điện thoại: 0398880794</p>
+        <p>Email: tuanphaiphai2006@gmail.com</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Lấy tham số sản phẩm từ URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const product = urlParams.get("product");
+
+      // Các thông tin sản phẩm
+      const products = {
+        sp1: {
+          image: "sp1.png",
+          title: "Đất rừng phương Nam",
+          price: "$15k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Cuốn sách này mang đến những câu chuyện đầy cảm hứng về đất rừng phương Nam.",
+        },
+        sp2: {
+          image: "sp2.png",
+          title: "Đắc Nhân Tâm",
+          price: "$20k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Đắc Nhân Tâm giúp bạn phát triển tư duy và cải thiện các mối quan hệ xã hội.",
+        },
+        sp3: {
+          image: "sp3.png",
+          title: "Bài giảng cuối cùng",
+          price: "$5k/ngày",
+          rating: "★★★☆☆",
+          description:
+            "Một bài giảng đầy cảm động về những điều quan trọng trong cuộc sống.",
+        },
+        sp4 : {
+          image: "sp4.png",
+          title: "Tuổi trẻ đáng giá bao nhiêu",
+          price: "$12k/ngày",
+          rating: "★★★★★",
+          description:
+            "Cuốn sách truyền cảm hứng về giá trị của tuổi trẻ và cách tận dụng nó.",
+        },
+        sp5 : {
+          image: "sp5.png",
+          title: "Nhà giả kim",
+          price: "$18k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Câu chuyện về hành trình tìm kiếm kho báu và ý nghĩa cuộc sống.",
+        },
+        sp6 : {
+          image: "sp6.png",
+          title: "Dế mèn phiêu lưu ký",
+          price: "$10k/ngày",                                       
+          rating: "★★★☆☆",
+          description:  
+            "Cuộc phiêu lưu của chú dế mèn và những bài học cuộc sống.",
+        },
+        sp7 : {
+          image: "sp7.png",
+          title: "Sapiens: Lược sử loài người",
+          price: "$25k/ngày",
+          rating: "★★★★★",
+          description:
+            "Khám phá lịch sử và sự tiến hóa của loài người qua các thời kỳ.",
+        },
+        sp8 : {
+          image: "sp8.png",
+          title: "Tuổi thơ dữ dội",
+          price: "$14k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Những câu chuyện về tuổi thơ đầy biến động và cảm xúc.",
+        },
+        sp9 : {
+          image: "sp9.png",
+          title: "Những người khốn khổ",
+          price: "$22k/ngày",  
+          rating: "★★★★★",
+          description:
+            "Tác phẩm kinh điển về cuộc sống và số phận của những con người nghèo khổ.",
+        },
+        sp10 : {
+          image: "sp10.png",
+          title: "Bí mật tư duy triệu phú",
+          price: "$16k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Khám phá những bí mật về tư duy và thói quen của những người giàu có.",
+        },
+        sp11 : {
+          image: "sp11.png",
+          title: "Hạt giống tâm hồn",
+          price: "$8k/ngày",
+          rating: "★★★☆☆",
+          description:
+            "Tuyển tập những câu chuyện ngắn đầy ý nghĩa về cuộc sống và tâm hồn.", 
+        },
+        sp12 : {
+          image: "sp12.png",
+          title: "Đừng bao giờ từ bỏ ước mơ",
+          price: "$19k/ngày",
+          rating: "★★★★★",
+          description:
+            "Cuốn sách truyền cảm hứng về việc theo đuổi ước mơ và không bao giờ từ bỏ.",
+        },
+        sp13 : {
+          image: "sp13.png",
+          title: "Chú nhân cuộc đời",
+          price: "$17k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Câu chuyện về hành trình trưởng thành và những bài học cuộc sống quý giá.",
+        },
+        sp14 : {
+          image: "sp14.png",
+          title: "Tiếng chim hót",
+          price: "$13k/ngày",
+          rating: "★★★★☆",
+          description:
+            "Một tác phẩm đầy cảm xúc về cuộc sống và những ước mơ của con người.",
+        },
+        sp15 : {
+          image: "sp15.png",
+          title: "Cuộn theo chiều gió",
+          price: "$11k/ngày",
+          rating: "★★★☆☆",
+          description:
+            "Câu chuyện về tình yêu và sự kiên cường trong cuộc sống.", 
+        },
+        sp16 : {
+          image: "sp16.png",
+          title: "Thần lùn",
+          price: "$9k/ngày",
+          rating: "★★☆☆☆",
+          description:
+            "Một câu chuyện kỳ ảo về những sinh vật thần thoại và cuộc phiêu lưu của chúng.",
+        },
+        sp17 : {
+          image: "sp17.png",
+          title: "Thung lũng đông vàng",
+          price: "$13k/ngày",
+          rating: "★★★★★",
+          description:
+            "Cuốn sách kể về cuộc sống và những bí ẩn của thung lũng đông vàng.",
+        },
+        sp18 : {
+          image: "sp18.png",
+          title: "Chú khủng long",
+          price: "$10k/ngày",
+            rating: "★★★★★",
+            description:
+              "Câu chuyện về tình bạn và cuộc phiêu lưu của một chú khủng long đáng yêu.",
+        },
+        sp19 : {
+          image: "sp19.png",
+          title: "Nàng dâu Halloween",
+          price: "$11k/ngày",
+            rating: "★★★★☆",
+            description:
+              "Một câu chuyện lãng  mạn pha chút kinh dị về nàng dâu trong đêm Halloween.",
+        },
+        sp20 : {
+          image: "sp20.png",
+          title: "Pokémon đặc biệt",
+          price: "$12k/ngày",
+            rating: "★★★★☆",
+            description:
+              "Cuốn sách khám phá thế giới Pokémon và những cuộc phiêu lưu kỳ thú.",
+        },
+
+      };
+
+      // Hiển thị thông tin sản phẩm dựa trên tham số
+      const productInfo = products[product];
+      if (productInfo) {
+        document.getElementById("product-image").src = productInfo.image;
+        document.getElementById("product-title").textContent =
+          productInfo.title;
+        document.getElementById("product-price").textContent =
+          productInfo.price;
+        document.getElementById("product-rating").textContent =
+          productInfo.rating;
+        document.getElementById("product-description").textContent =
+          productInfo.description;
+      } else {
+        document.getElementById("product-title").textContent =
+          "Sản phẩm không tồn tại";
+      }
+    </script>
+  </body>
+</html>
