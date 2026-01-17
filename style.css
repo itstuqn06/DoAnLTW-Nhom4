@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fd0000; /* màu nền xám nhạt */
+  background-color: hsl(0, 94%, 47%); /* màu nền xám nhạt */
 }
 
 /* Header */
